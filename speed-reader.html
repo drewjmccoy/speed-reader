@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+	<!--
+	Author: Drew McCoy
+	This is the main page of the Speed Reader website.
+	Speed Reader is a project I completed for CSE 154 (Web Programming) at UW.
+	-->
+
+	<head>
+		<title>Speed Reader</title>
+		<link rel="stylesheet" type="text/css" href="speed-reader.css" />
+		<script type="text/javascript" src="speed-reader.js"></script>
+	</head>
+
+	<body>
+		<h1>SpeedReader</h1>
+		<div id="display"></div>
+		<div>
+			<fieldset class="controls">
+				<legend>Play Controls:</legend>
+				<button id="start">Start</button>
+				<button id="stop" disabled="disabled">Stop</button>
+			</fieldset>
+
+			<fieldset>
+				<legend>Speed:</legend>
+				<select id="speed">
+					<option value="500">50 wpm</option>
+					<option value="200">300 wpm</option>
+					<option value="171" selected="selected">350 wpm</option>
+					<option value="150">400 wpm</option>
+					<option value="133">450 wpm</option>
+					<option value="120">500 wpm</option>
+				</select>
+			</fieldset>
+
+			<fieldset class="controls">
+				<legend>Size:</legend>
+				<label>
+					<input type="radio" name="size" value="36pt" id="medium" checked="checked" />
+					Medium
+				</label>
+				<label>
+					<input type="radio" name="size" value="48pt" id="big" />
+					Big
+				</label>
+				<label>
+					<input type="radio" name="size" value="60pt" id="bigger" />
+					Bigger
+				</label>
+			</fieldset>
+		</div>
+		
+		<div>
+			<fieldset>
+				<legend>Input Text</legend>
+				<textarea rows="10" cols="80" id="text"></textarea>
+			</fieldset>
+		</div>
+	</body>
+</html>

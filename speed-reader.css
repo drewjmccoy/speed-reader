@@ -1,0 +1,62 @@
+/*
+Author: Drew McCoy
+This is the style sheet for the Speed Reader website.
+*/
+
+body {
+	background-color: #EAF6F6;
+	font-family: Garamond, Serif;
+	font-size: 12pt;
+}
+
+button {
+	background-color: white;
+}
+
+button, img {
+	width: 70px;
+}
+
+button, textarea {
+	border: solid 1px gray;
+}
+
+button[disabled="disabled"], .disabled {
+	background-color: lightgray;
+}
+
+#display {
+	border: solid 2px #8EBEBE;
+	border-radius: 5px;
+	font-family: monospace;
+	font-size: 36pt;
+	height: 100px;
+	line-height: 100px;
+	margin: auto;
+	width: 80%;
+}
+
+#display, legend {
+	font-weight: bold;
+}
+
+div, h1 {
+	text-align: center;
+}
+
+fieldset {
+	border: none;
+	display: inline;
+	vertical-align: top;
+}
+
+legend {
+	border-bottom: solid 1px #8EBEBE;
+	padding: 2px;
+	text-align: left;
+	width: 100%;
+}
+
+textarea, #display {
+	background-color: #FFFFFF;
+}
